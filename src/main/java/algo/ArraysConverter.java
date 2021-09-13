@@ -6,7 +6,7 @@ import java.util.List;
 public class ArraysConverter {
     public List<Integer> convertToIntList(List<String> arr) {
         try {
-            String str = new String("1, 2");
+            String str = new String("12");
             int num = Integer.parseInt(str);
         }catch (NumberFormatException e0){
             System.err.println("Invalid value");
