@@ -11,7 +11,7 @@ public class ArraysConverter {
         }catch (NumberFormatException e0){
             System.err.println("Invalid value");
         }
-        return new LinkedList<>(); // Code here
+        return new LinkedList<>();
     }
 
     public List<String> convertToStringList(List<Integer> arr) {
@@ -21,7 +21,7 @@ public class ArraysConverter {
         }catch (NumberFormatException e1){
             System.err.println("Invalid value");
         }
-        return new LinkedList<>(); // Code here
+        return new LinkedList<>();
     }
 
     public int[] convertToIntList(String[] arr) {
