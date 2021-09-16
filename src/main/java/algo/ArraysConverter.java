@@ -31,11 +31,11 @@ public class ArraysConverter {
         return null;
     }
 
-    public int[] convertToIntList(String[] arr) {
+    public int[] convertToIntArray(String[] arr) {
         return null; // Code here
     }
 
-    public String[] convertToStringList(int[] arr) {
+    public String[] convertToStringArray(int[] arr) {
         if (arr == null || arr.length == 0) {
             return new String[0];
         }
