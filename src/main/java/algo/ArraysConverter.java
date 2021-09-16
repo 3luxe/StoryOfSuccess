@@ -5,30 +5,46 @@ import java.util.List;
 
 public class ArraysConverter {
     public List<Integer> convertToIntList(List<String> arr) {
-        try {
-            String str = new String("12");
-            int num = Integer.parseInt(str);
-        }catch (NumberFormatException e0){
-            System.err.println("Invalid value");
+        if (arr == null || arr.size() == 0) {
+            return new LinkedList<>();
         }
-        return new LinkedList<>();
+        List<Integer> integerList = new LinkedList<>();
+        for (String s : arr) {
+            try {
+                int i = Integer.parseInt(s);
+                integerList.add(i);
+            } catch (NumberFormatException e0) {
+                System.err.println("Invalid String value: " + s);
+            }
+        }
+        return integerList;
     }
 
     public List<String> convertToStringList(List<Integer> arr) {
-        try{
-            Integer i1 = new Integer("5");
-            System.out.println(i1);
-        }catch (NumberFormatException e1){
-            System.err.println("Invalid value");
-        }
-        return new LinkedList<>();
+//        List<String> stringList = new LinkedList<>();
+//        try {
+//            Integer i1 = Integer.valueOf("string");
+//        } catch (NumberFormatException e1) {
+//            System.err.println("Invalid int value: " + i);
+//        }
+//        return stringList;
+        return null;
     }
 
     public int[] convertToIntList(String[] arr) {
-        return new int[0]; // Code here
+        return null; // Code here
     }
 
     public String[] convertToStringList(int[] arr) {
-        return new String[0]; // Code here
+        if (arr == null || arr.length == 0) {
+            return new String[0];
+        }
+        String s;
+        String[] stringArr = new String[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            s = String.valueOf(arr[i]);
+            stringArr[i] = s;
+        }
+        return stringArr;
     }
 }
