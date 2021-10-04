@@ -1,5 +1,6 @@
 package algo;
 
+//LuxCampus task
 public class Freedge {
 
     static boolean[][] input = {
